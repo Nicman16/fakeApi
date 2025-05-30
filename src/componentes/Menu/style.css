@@ -1,13 +1,64 @@
 .c-menu{
-    background-color: silver;
+    background-color: #f7d02c;
     flex-wrap: wrap;
     position: fixed;
     bottom: 0;
     left: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     padding: 15px;
+    border-top: 3px solid #3b4cca;
+    z-index: 100;
+}
+.c-menu a {
+    color: #3b4cca;
+    font-weight: bold;
+    text-decoration: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    background: #3b4cca;.logout-btn:hover {}    transition: background 0.2s;    margin-left: 10px;    cursor: pointer;    font-weight: bold;    border-radius: 8px;    padding: 8px 18px;    border: none;    color: #fff;    background: #ea1a1a;.logout-btn {}    color: #fff;    background: #ea1a1a;.c-menu a:hover {}    transition: background 0.2s;    background: #fffbe7;    border-radius: 8px;    padding: 8px 18px;    padding: 8px 18px;
+    border-radius: 8px;
+    background: #fffbe7;
+    transition: background 0.2s;
+}
+.c-menu a:hover {
+    background: #ea1a1a;
+    color: #fff;
+}
+.logout-btn {
+    background: #ea1a1a;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+.logout-btn:hover {
+    background: #3b4cca;
 }

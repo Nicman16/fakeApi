@@ -44,7 +44,7 @@ function Listas() {
 
       {resultados.map((pokemon, index) => (
         <div className='c-lista-pokemon'
-        onClick={() => navigate(`/detalle/${pokemon.name}`)}
+        onClick={() => navigate(`/Pokemon/${pokemon.name}`)}
         key={index}>
           <p>{pokemon.url.split("/")[6]}</p>
           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.url.split("/")[6]}.png`} 

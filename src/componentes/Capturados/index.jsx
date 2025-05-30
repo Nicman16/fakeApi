@@ -15,7 +15,7 @@ function Capturados() {
         <div
           key={id}
           className={listaCapturados.includes(id.toString()) ? "c-unpoke c-mios-pokemon" : "c-unpoke"}
-          onClick={() => listaCapturados.includes(id.toString()) ? navigate(`/detalle/${id}`) : null}
+          onClick={() => listaCapturados.includes(id.toString()) ? navigate(`/Pokemon/${id}`) : null}
         >
           {listaCapturados.includes(id.toString()) ? (
             <img

@@ -46,7 +46,7 @@ return (
         <Route path='/Aleatorios' element={usuario ? <Aleatorios /> : <Navigate to="/Login" />} />
         <Route path='/Capturados' element={usuario ? <Capturados /> : <Navigate to="/Login" />} />
         <Route path='/Favoritos' element={usuario ? <Favoritos /> : <Navigate to="/Login" />} />
-        <Route path='/detalle/:name' eelement={usuario ? <Pokemon /> : <Navigate to="/Login" />} />
+        <Route path='/Pokemon/:name' element={usuario ? <Pokemon /> : <Navigate to="/Login" />} />
         <Route path='/Usuarios' element={usuario ? <Usuario /> : <Navigate to="/Login" />} />
 
         <Route path="/login" element={<Login/>} />

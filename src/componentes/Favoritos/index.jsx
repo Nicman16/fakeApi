@@ -15,7 +15,7 @@ function Favoritos() {
         <div className='c-lista'>
           {favoritos.map((pokemon, index) => (
           <div className='c-lista-pokemon'
-          onClick={() => navigate(`/detalle/${pokemon.id}`)}
+          onClick={() => navigate(`/Pokemon/${pokemon.id}`)}
           key={index}>
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`} 
                   alt={`Pokémon ${pokemon.nombre}`} width='auto' height='60' loading='lazy'

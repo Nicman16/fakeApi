@@ -6,16 +6,18 @@ import "./Login.css";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [errorMsg, setErrorMsg] = useState("");
     const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        setErrorMsg("");
         const { error } = await supabase.auth.signInWithPassword({
             email,
             password,
         });
         if (error) {
-            alert("Usuario o contraseña no válido");
+            setErrorMsg("Usuario o contraseña no válido");
         } else {
             navigate("/");
         }
@@ -47,6 +49,7 @@ function Login() {
                 />
                 <button type="submit">Iniciar sesión</button>
             </form>
+            {errorMsg && <p style={{ color: "#ea1a1a" }}>{errorMsg}</p>}
             <p style={{ margin: "18px 0 8px 0", color: "#3b4cca" }}>
                 ¿No tienes cuenta?
             </p>
