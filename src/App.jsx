@@ -11,6 +11,7 @@ import Pokemon from './componentes/Pokemon'
 import Usuario from './componentes/Usuario'
 import Menu from './componentes/Menu'
 import Login from './componentes/Login'
+import Registro from './componentes/Registro'
 import './App.css'
 
 function App() {
